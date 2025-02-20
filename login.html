@@ -22,8 +22,14 @@
         </form>
         <p id="responseMessage"></p>
         <!-- Bouton "Mot de passe oublié" -->
-        <button id="forgotPasswordBtn" onclick="window.location.href='forgot-password.html'">Mot de passe oublié ?</button>
+        <button id="forgotPasswordBtn" onclick="testRedirect()">Mot de passe oublié ?</button>
     </div>
+    <script>
+        function testRedirect() {
+            console.log("Redirection test : forgot-password.html");
+            window.location.href = "forgot-password.html";
+        }
+        </script>
     <script src="login.js"></script>
 </body>
 </html>
